@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+    <title>js获取时间返回问候语</title>
+</head>
+<body>
+<script language="JavaScript">
+    var time = new Date();
+    var h=time.getHours();
+    if (h>0&&h<=6){
+        window.alert("现在是凌晨了,您该休息啦!")
+    }else if (h>6&&h<=8){
+        window.alert("早上好!")
+    }else if (h>8&&h<=12){
+        window.alert("中午的饭吃的还不错扒")
+    }else if (h>12&&h<=18){
+        window.alert("下午好！")
+    }else if (h>18&&h<=24){
+        window.alert("这么晚了您还在工作,真是辛苦了!")
+    }
+    </script>
+</body>
+</html>
