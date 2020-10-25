@@ -35,40 +35,46 @@
 <form action="#" method="post">
     <table cellpadding="2" align="center">
         <tr>
-            <td align="right"><span style="color: aqua; font-size: x-small; BACKGROUND-COLOR: transparent;"><span style="color:red">*</span>邮箱</span>&emsp;&emsp;</td>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; BACKGROUND-COLOR: transparent;"><span style="color:red">*</span>邮箱</span>&emsp;&emsp;</td>
             <td>
-                <input type="text"  name="mailbox"ID="em" class = "ad" size="33" placeholder="请填写邮箱" style="BACKGROUND-COLOR: transparent;"/>
+                <input type="text"  name="mailbox"ID="em" class = "ad" size="33" placeholder="请填写邮箱,必须符合邮箱格式" style="BACKGROUND-COLOR: transparent;"/>
 
             </td>
         </tr>
         </tr>
-        <td align="right"><span style="color: aqua; font-size: x-small; "><span style="color:red">*</span>用户名</span>&emsp;&emsp;</td>
-        <td><input type="text" id="reset" class="yh" size="33" name="username" placeholder="请填写用户名" style="BACKGROUND-COLOR:transparent";/>
+        <td align="right"><span style="color: #326dcc; font-size: x-small; "><span style="color:red">*</span>用户名</span>&emsp;&emsp;</td>
+        <td><input type="text" id="reset" class="yh" size="33" name="username" placeholder="请填写用户名,只能输入4-16个字符" style="BACKGROUND-COLOR:transparent";/>
 
         </td>
         </tr>
         <tr>
-            <td align="right"><span style="color: aqua; font-size: x-small; "><span style="color:red">*</span>密码</span>&emsp;&emsp; </td>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; "><span style="color:red">*</span>密码</span>&emsp;&emsp; </td>
             <td>
-                <input type="password" ID="search" size="33" class="pws" name="password" placeholder="请填写密码" style= BACKGROUND-COLOR:transparent;/>
+                <input type="password" ID="search" size="33" class="pws" name="password" placeholder="请填写密码,密码必须在 6-12 个字符" style= BACKGROUND-COLOR:transparent;/>
             </td>
         </tr>
         <tr>
-            <td align="right"><span style="color: aqua; font-size: x-small; ">性别</span>&emsp;&emsp; </td>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; "><span style="color:red">*</span>确认密码</span>&emsp;&emsp; </td>
+            <td>
+                <input type="password" ID="search2" size="33" class="pws2" name="password" placeholder="请填写确认密码" style= BACKGROUND-COLOR:transparent;/>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; ">性别</span>&emsp;&emsp; </td>
             <td>
                 <input type="radio" name="gender" value="male" /> <span style="color: red; font-size: x-small; ">男</span>
                 <input type="radio" name="gender" value="male" /> <span style="color: red; font-size: x-small; ">女</span>
             </td>
         </tr>
         <tr>
-            <td align="right"><span style="color: aqua; font-size: x-small; "><span style="color:red">*</span>联系电话</span>&emsp;&emsp;</td>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; "><span style="color:red">*</span>联系电话</span>&emsp;&emsp;</td>
             <td>
-                <input type="text" id="dh" class="tx" size="33" name="text" placeholder="请填写联系电话" style= BACKGROUND-COLOR:transparent;/>
+                <input type="text" id="dh" class="tx" size="33" name="text" placeholder="请填写联系电话,只能输入11位" style= BACKGROUND-COLOR:transparent;/>
             </td>
         </tr>
 
         <tr>
-            <td align="right"><span style="color: aqua; font-size: x-small; ">个性介绍</span>&emsp;&emsp; </td>
+            <td align="right"><span style="color: #326dcc; font-size: x-small; ">个性介绍</span>&emsp;&emsp; </td>
             <td>
                     <form>
                     <textarea cols="35" rows="5" placeholder="在这里输入....." style= BACKGROUND-COLOR:transparent;></textarea>
@@ -113,6 +119,16 @@
                     }
                     .pws {
                         background: url("https://www.kuxiaojie.top/wp-content/uploads/2020/10/favicon-1-1.ico")no-repeat 315px ;
+                        width: 350px;
+                        height: 40px;
+                        border-radius:5px;
+                        border: 1px solid #999999;
+                        box-shadow: 1px 1px 3px #cccccc;
+                        padding-left: 10px;
+                        margin-right: 10px;
+                    }
+                    .pws2 {
+                        background: url("https://www.kuxiaojie.top/wp-content/uploads/2020/10/确认密码.png")no-repeat 315px ;
                         width: 350px;
                         height: 40px;
                         border-radius:5px;
