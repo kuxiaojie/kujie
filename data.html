@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js时间页面显示</title>
+    <style>
+        #time{
+            width: 800px;
+            height: 150px;
+            margin: auto;
+            line-height: 150px;
+            color: #326dcc;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div id="time"></div>
+</body>
+</html>
+
+<script type="text/javascript" >
+    function time(){
+        var vWeek,vWeek_s,vDay;
+        vWeek = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+        var date =  new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        vWeek_s = date.getDay();
+        if (month >= 1 && month <= 9) {
+            mon = "0" + mon;
+        }
+        if (day >= 0 && day <= 9) {
+            day = "0" + day;
+        }
+        if (hours >= 0 && hours <= 9) {
+            hours = "0" +hours;
+        }
+
+        if (minutes >= 0 && minutes <= 9) {
+            minutes = "0" + minutes;
+        }
+
+        if (seconds >= 0 && seconds <= 9) {
+            seconds = "0" + seconds;
+        }
+        document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s];
+    };
+    setInterval("time()",1000);
+</script>
